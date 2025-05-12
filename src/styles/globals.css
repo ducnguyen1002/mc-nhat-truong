@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {}
+
+
+@layer base {
+
+	body {
+		@apply font-body;
+	}
+
+	h1,
+	h2,
+	h3 {
+		@apply font-heading;
+	}
+
+	h1 {
+		@apply text-5xl md:text-8xl font-bold;
+	}
+
+	h2 {
+		@apply text-4xl md:text-6xl font-semibold;
+	}
+
+	h3 {
+		@apply text-2xl md:text-4xl font-medium;
+	}
+
+	p,
+	span,
+	a,
+	div,
+	li {
+		@apply text-base md:text-lg;
+	}
+
+}
+
+@layer components {}
+
+@layer utilities {
+	@keyframes slideLeft {
+		0% {
+			transform: translateX(0);
+		}
+
+		100% {
+			transform: translateX(-100%);
+		}
+	}
+
+	@keyframes slideRight {
+		0% {
+			transform: translateX(0);
+		}
+
+		100% {
+			transform: translateX(100%);
+		}
+	}
+
+	.animate-slide-left {
+		animation: slideLeft 0.8s ease-in-out forwards;
+	}
+
+	.animate-slide-right {
+		animation: slideRight 0.8s ease-in-out forwards;
+	}
+
+	@keyframes shakeZoom {
+		0% {
+			transform: scale(1) rotate(0);
+		}
+
+		10% {
+			transform: scale(1.1) rotate(-5deg);
+		}
+
+		20% {
+			transform: scale(1.1) rotate(5deg);
+		}
+
+		30% {
+			transform: scale(1.1) rotate(-5deg);
+		}
+
+		40% {
+			transform: scale(1.1) rotate(5deg);
+		}
+
+		50% {
+			transform: scale(1.1) rotate(0);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	.animate-shake-zoom {
+		animation: shakeZoom 1.5s ease-in-out infinite;
+	}
+
+}
