@@ -11,7 +11,7 @@ const MainLayout = ({ children }) => {
     return (
         <main>
             <TheHeader />
-            <div className="overflow-x-hidden overflow-y-hidden bg-lightBlue">
+            <div className="overflow-x-hidden overflow-y-hidden">
                 {children}
             </div>
             <TheFooter />

@@ -3,9 +3,9 @@ import React from 'react'
 
 const skillsData = [
     {
-        title: 'MC Tiệc cưới',
+        title: 'Hội Nghị Khách Hàng',
         description:
-            'Thế mạnh của tôi là dẫn các chương trình tiệc cưới tại tư gia và nhà hàng, lễ ăn hỏi - nạp tài, lễ thành hôn, lễ vu quy, lễ vow hiện đại. Hỗ trợ tư vấn xây dựng kịch bản chương trình cho từng cặp đôi.',
+            'Với kinh nghiệm dẫn dắt nhiều chương trình hội nghị và sự kiện doanh nghiệp, tôi là MC chuyên nghiệp chuyên phụ trách các sự kiện Hội nghị Khách hàng – nơi kết nối giữa doanh nghiệp và đối tác, khách hàng thân thiết.',
         images: [
             'wedding-1.jpg',
             'wedding-2.jpg',
@@ -15,19 +15,16 @@ const skillsData = [
         reverse: false,
     },
     {
-        title: 'MC Sự kiện',
-        list: [
-            'Dẫn lễ khai trương, gala dinner, tiệc tất niên, hội khóa, hợp lớp',
-            'MC cho các chương trình thực tế, chương trình dành cho thiếu nhi, MC Livestream cho các nhãn hàng',
-            'MC cho các chương trình kỷ niệm thành lập công ty, lễ cất nóc, lễ khởi công, lễ khánh thành...',
-        ],
+        title: 'Mở Bán Bất Động Sản',
+        description:
+            'Là MC chuyên nghiệp trong các sự kiện mở bán bất động sản, tôi luôn giữ phong thái tự tin, dẫn dắt mạch lạc, tạo không khí sôi động – góp phần nâng tầm hình ảnh dự án và truyền cảm hứng mua hàng đến khách mời.',
         images: ['event-1.jpg', 'event-2.jpg', 'event-3.jpg', 'event-4.jpg'],
         reverse: true,
     },
     {
-        title: 'MC Du lịch',
+        title: 'Giới Thiệu Sản Phẩm',
         description:
-            'Tổ chức các chương trình Team building, Gala dinner... có ekip hỗ trợ chuyên nghiệp, có thể phục vụ chương trình lên đến hàng ngàn khách',
+            'Là MC giới thiệu sản phẩm, tôi tập trung làm nổi bật thông điệp thương hiệu, truyền tải rõ ràng tính năng và giá trị sản phẩm đến khách hàng một cách lôi cuốn, dễ hiểu – góp phần tạo ấn tượng mạnh và thúc đẩy quyết định trải nghiệm hoặc mua hàng.',
         images: [
             'teambuilding-1.jpg',
             'teambuilding-2.jpg',
@@ -36,35 +33,19 @@ const skillsData = [
         ],
         reverse: false,
     },
-    {
-        title: 'MC Sinh nhật, hoạt náo trẻ em',
-        list: [
-            'Thân thiện, gần gũi với trẻ em.',
-            'Kỹ năng hoạt náo tốt, làm chủ sân khấu',
-            'Chủ động lên ý tưởng theo sở thích từng bé.',
-            'Có kinh nghiệm làm việc với cả phụ huynh & đơn vị tổ chức.',
-        ],
-        images: [
-            'birthday-1.jpg',
-            'birthday-2.jpg',
-            'birthday-3.jpg',
-            'birthday-4.jpg',
-        ],
-        reverse: true,
-    },
 ]
 
 const Skills = () => {
     return (
         <section
             id="kinh-nghiem"
-            className="container bg-lightBlue py-10 text-navy md:py-20"
+            className="container py-10 text-black md:py-20"
         >
-            <h2 className="mb-4 text-center uppercase tracking-wide md:text-right">
-                Kinh nghiệm
+            <h2 className="mb-4 text-center uppercase tracking-wide">
+                mc sự kiện chuyên nghiệp
             </h2>
-            <p className="mb-12 text-center text-xl font-light text-gray-700 md:text-right">
-                trong suốt 5 năm hoạt động nghệ thuật
+            <p className="text-gray-700 mb-12 text-center text-xl font-light">
+                Sẵn sàng phục vụ mọi sự kiện lớn nhỏ của quý khách!
             </p>
 
             {skillsData.map((item, index) => (
@@ -81,7 +62,7 @@ const Skills = () => {
                         className="relative z-10 flex flex-col items-center justify-center gap-4 md:w-1/3"
                     >
                         {/* Số thứ tự */}
-                        <span className="absolute left-0 top-0 font-heading text-[80px] font-bold text-navy opacity-30 md:top-[10%] md:text-[150px]">
+                        <span className="absolute left-0 top-0 font-heading text-[80px] font-bold text-black opacity-30 md:top-[10%] md:text-[150px]">
                             {index + 1}.
                         </span>
                         <h3
@@ -110,8 +91,8 @@ const Skills = () => {
                         data-aos="fade-left"
                         className={`grid w-full grid-cols-2 gap-2 rounded-xl p-2 md:min-h-[480px] ${
                             item.reverse
-                                ? 'bg-gradient-to-r from-navy to-lightBlue'
-                                : 'bg-gradient-to-l from-warmBlue to-lightBlue'
+                                ? 'bg-gradient-to-b from-mediumGray to-lightGray'
+                                : 'bg-gradient-to-b from-gray to-lightGray'
                         } md:w-2/3`}
                     >
                         {item.images.map((img, i) => (

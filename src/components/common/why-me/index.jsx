@@ -8,14 +8,14 @@ const WhyMe = () => {
     return (
         <section
             id="vi-sao"
-            className="container rounded-xl bg-navy py-10 text-white md:py-20"
+            className="container rounded-xl bg-black py-10 text-white md:py-20"
         >
             {/* Tiêu đề */}
             <h2 className="mb-4 text-center uppercase tracking-wide text-white">
                 Vì sao
             </h2>
-            <p className="mb-16 text-center text-xl font-light text-gray-300">
-                khách hàng lựa chọn MC Gia Phú
+            <p className="text-gray-300 mb-16 text-center text-xl font-light">
+                khách hàng lựa chọn MC Nhật Trường
             </p>
 
             {/* Nội dung 3 cột */}
@@ -27,7 +27,7 @@ const WhyMe = () => {
                 >
                     <Flame className="mb-6 size-16 text-white md:size-20" />
                     <h3 className="mb-2 uppercase text-white">Nhiệt huyết</h3>
-                    <p className="text-center text-gray-300">
+                    <p className="text-gray-300 text-center">
                         Luôn tràn đầy năng lượng, cháy hết mình để khuấy động
                         không khí và kết nối khán giả
                     </p>
@@ -39,7 +39,7 @@ const WhyMe = () => {
                 >
                     <Heart className="mb-6 size-16 text-white md:size-20" />
                     <h3 className="mb-2 uppercase text-white">Tận tâm</h3>
-                    <p className="text-center text-gray-300">
+                    <p className="text-gray-300 text-center">
                         Chăm chút từng chi tiết, lắng nghe và thấu hiểu mong
                         muốn của chương trình để mang lại trải nghiệm trọn vẹn
                     </p>
@@ -51,7 +51,7 @@ const WhyMe = () => {
                 >
                     <Briefcase className="mb-6 size-16 text-white md:size-20" />
                     <h3 className="mb-2 uppercase text-white">Chuyên nghiệp</h3>
-                    <p className="text-center text-gray-300">
+                    <p className="text-gray-300 text-center">
                         Tác phong chuẩn mực, xử lý tình huống linh hoạt, làm chủ
                         sân khấu và giữ vững phong độ từ đầu đến cuối
                     </p>
@@ -63,7 +63,7 @@ const WhyMe = () => {
             <div className="flex justify-center">
                 <Link
                     href={'tel:' + USER_PHONENUMBER}
-                    className="mt-10 w-fit cursor-pointer rounded border bg-white px-8 py-4 font-heading text-navy transition-all hover:bg-navy hover:text-white"
+                    className="mt-10 w-fit cursor-pointer rounded border bg-white px-8 py-4 font-heading text-black transition-all hover:bg-black hover:text-white"
                 >
                     Liên hệ ngay
                 </Link>

@@ -21,15 +21,12 @@ const Feedbacks = () => {
     const nextRef = useRef(null)
 
     return (
-        <section
-            id="feedbacks"
-            className="container bg-lightBlue py-10 text-navy md:py-20"
-        >
+        <section id="feedbacks" className="container py-10 text-black md:py-20">
             <h2 className="mb-4 text-center uppercase tracking-wide">
                 Đánh giá
             </h2>
-            <p className="mb-12 text-center text-xl font-light text-gray-700">
-                trực tiếp từ khách hàng của MC Gia Phú
+            <p className="text-gray-700 mb-12 text-center text-xl font-light">
+                trực tiếp từ khách hàng của MC Nhật Trường
             </p>
 
             {/* Swiper */}
@@ -55,7 +52,7 @@ const Feedbacks = () => {
                             key={index}
                             className="flex justify-center p-2 md:p-6"
                         >
-                            <div className="relative h-[600px] w-full shadow-2xl shadow-warmBlue">
+                            <div className="relative h-[600px] w-full shadow-2xl shadow-darkGray">
                                 <Image
                                     src={`/assets/images/${img}`}
                                     alt={`Feedback ${index + 1}`}
@@ -70,14 +67,14 @@ const Feedbacks = () => {
                 {/* Custom Navigation Buttons */}
                 <button
                     ref={prevRef}
-                    className="absolute left-0 top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full border-[1px] border-navy bg-lightBlue p-3 text-navy shadow-md transition hover:scale-110"
+                    className="absolute left-0 top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full border-[1px] border-black bg-lightGray p-3 text-black shadow-md transition hover:scale-110"
                 >
                     <ChevronLeft size={20} />
                 </button>
 
                 <button
                     ref={nextRef}
-                    className="absolute right-0 top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full border-[1px] border-navy bg-lightBlue p-3 text-navy shadow-md transition hover:scale-110"
+                    className="absolute right-0 top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full border-[1px] border-black bg-lightGray p-3 text-black shadow-md transition hover:scale-110"
                 >
                     <ChevronRight size={20} />
                 </button>
@@ -87,18 +84,9 @@ const Feedbacks = () => {
                 data-aos="fade-up"
                 className="mt-20 text-center uppercase tracking-wide"
             >
-                Cảm ơn quý khách <br /> đã tìm đến MC Gia Phú
+                MC Nhật Trường <br />
+                rất mong muốn được hợp tác cùng quý vị!
             </h3>
-            <p
-                data-aos="fade-up"
-                data-aos-delay="100"
-                className="mx-auto mt-4 w-full text-center text-base text-gray-700 lg:max-w-[800px]"
-            >
-                Sự tin tưởng và ủng hộ của quý khách chính là động lực lớn nhất
-                để tôi không ngừng nâng cao chất lượng dịch vụ. Tôi mong rằng
-                mỗi chương trình đều sẽ là một kỷ niệm đáng nhớ, đầy cảm xúc và
-                trọn vẹn. Hẹn gặp lại quý khách trong những sự kiện sắp tới!
-            </p>
         </section>
     )
 }

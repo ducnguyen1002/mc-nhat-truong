@@ -34,10 +34,10 @@ const MobileHeader = () => {
             }`}
         >
             {/* Thanh top chứa icon mở menu */}
-            <div className="flex items-center justify-between border-b border-navy bg-white px-4 py-3 shadow-lg">
-                <span className="font-heading text-navy">GiaPhu</span>
+            <div className="bg-glass flex items-center justify-between border-b border-black px-4 py-3 shadow-lg">
+                <span className="font-heading text-black">NhatTruong</span>
                 <button
-                    className="text-navy"
+                    className="text-black"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                     {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
@@ -46,18 +46,18 @@ const MobileHeader = () => {
 
             {/* Panel menu trượt xuống */}
             <div
-                className={`absolute left-0 top-full w-full overflow-hidden border-b border-navy bg-white shadow-md transition-all duration-300 ${
+                className={`absolute left-0 top-full w-full overflow-hidden border-b border-black bg-white shadow-md transition-all duration-300 ${
                     isMenuOpen
                         ? 'max-h-[1000px] opacity-100'
                         : 'max-h-0 opacity-0'
                 }`}
             >
-                <ul className="flex h-screen flex-col divide-y divide-lightBlue">
+                <ul className="flex h-screen flex-col divide-y divide-lightGray">
                     {navItems.map((nav) => (
                         <li key={nav.id}>
                             <Link
                                 href={nav.id}
-                                className="block px-6 py-4 text-center font-heading text-2xl text-navy"
+                                className="block px-6 py-4 text-center font-heading text-2xl text-black"
                                 onClick={() => setIsMenuOpen(false)} // Đóng menu khi chọn
                             >
                                 {nav.title}

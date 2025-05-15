@@ -27,10 +27,14 @@ module.exports = {
 				body: ['Inter', 'sans-serif'],
 			},
 			colors: {
-				lightBlue: '#F7F2EC',
+				white: '#FFFFFF',        // trắng tinh
+				gray: '#D1D5DB',         // xám trung tính
+				mediumGray: '#9CA3AF',   // xám vừa
+				darkGray: '#4B5563',     // xám đậm
+				black: '#111827',        // gần đen
+				lightGray: '#F7F2EC',
 				blue: '#c8daea',
-				warmBlue: '#946A52',
-				navy: '#2D2512',
+
 			}
 		}
 	},

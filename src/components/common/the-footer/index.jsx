@@ -3,10 +3,10 @@ import React from 'react'
 
 const TheFooter = () => {
     return (
-        <footer className="flex w-full items-center bg-navy py-8 text-white">
+        <footer className="flex w-full items-center bg-black py-8 text-white">
             <div className="container flex flex-col items-center justify-between text-center md:flex-row md:text-left">
                 <p className="text-sm">
-                    © {new Date().getFullYear()} MC Gia Phú. All rights
+                    © {new Date().getFullYear()} MC Nhật Trường. All rights
                     reserved.
                 </p>
                 <p className="text-sm">

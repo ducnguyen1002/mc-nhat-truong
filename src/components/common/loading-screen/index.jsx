@@ -19,8 +19,8 @@ const LoadingScreen = ({ onFinish }) => {
             }`}
         >
             {/* Hai lớp màn hình mở từ giữa */}
-            <div className="animate-slide-left absolute left-0 top-0 h-full w-1/2 bg-navy" />
-            <div className="animate-slide-right absolute right-0 top-0 h-full w-1/2 bg-navy" />
+            <div className="animate-slide-left absolute left-0 top-0 h-full w-1/2 bg-black" />
+            <div className="animate-slide-right absolute right-0 top-0 h-full w-1/2 bg-black" />
         </div>
     )
 }

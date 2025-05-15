@@ -2,15 +2,12 @@ import React from 'react'
 
 const Video = () => {
     return (
-        <section
-            id="video"
-            className="container bg-lightBlue py-10 text-navy md:py-20"
-        >
+        <section id="video" className="container py-10 text-black md:py-20">
             <h2 className="mb-4 text-center uppercase tracking-wide">
                 Video thực tế
             </h2>
-            <p className="mb-12 text-center text-xl font-light text-gray-700">
-                chương trình MC Gia Phú dẫn dắt
+            <p className="text-gray-700 mb-12 text-center text-xl font-light">
+                chương trình MC Nhật Trường dẫn dắt
             </p>
 
             <iframe

@@ -39,12 +39,15 @@ const DesktopHeader = () => {
 
     return (
         <header
-            className={`fixed left-0 top-0 z-[1000] hidden w-full transform rounded-b-xl border border-b-navy border-t-transparent bg-white py-3 shadow-lg transition-transform duration-300 lg:block ${
+            className={`bg-glass fixed left-0 top-0 z-[1000] hidden w-full transform rounded-b-xl border border-b-black border-t-transparent py-3 shadow-lg transition-transform duration-300 lg:block ${
                 isVisible ? 'translate-y-0' : '-translate-y-full'
             }`}
         >
-            <div className="container">
-                <ul className="flex w-full justify-evenly">
+            <div className="container flex justify-between">
+                <span className="font-heading text-lg uppercase text-black">
+                    NhatTruong
+                </span>
+                <ul className="flex w-2/3 justify-evenly">
                     {navItems.map((nav) => (
                         <Link
                             key={nav.id}
