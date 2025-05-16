@@ -33,7 +33,12 @@ const AboutMe = () => {
                         Chuyên gia tổ chức sự kiện{' '}
                     </div>
                 </div>
-                <div class="col-span-2">
+                <div class="col-span-2 space-y-2">
+                    <p>
+                        MC Nhật Trường đã tốt nghiệp Lớp Cao đẳng Sư phạm Âm
+                        nhạc & Trường Cao đẳng Văn hoá Nghệ thuật Thanh Hoá và
+                        được đào tạo lớp Thuyết trình viên tại Hà Nội.
+                    </p>
                     <p>
                         Với 15 năm trong ngành, MC Nhật Trường xuất sắc trong
                         việc dẫn dắt các sự kiện ở nhiều quy mô. Sự chuyên
@@ -44,11 +49,6 @@ const AboutMe = () => {
                         Dẫn dắt đội ngũ HTP Play, Nhật Trường chuyên tổ chức các
                         hoạt động team building sáng tạo, mang đến những trải
                         nghiệm gắn kết và đáng nhớ.
-                    </p>
-                    <p>
-                        Khám phá cách chúng tôi có thể nâng tầm sự kiện của bạn.
-                        Hãy tin tưởng vào chuyên môn của chúng tôi để có một
-                        chương trình trọn vẹn và khó quên.
                     </p>
                 </div>
             </div>

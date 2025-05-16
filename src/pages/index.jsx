@@ -19,15 +19,16 @@ export default function Home() {
                     content="MC gala dinner, team building chuyên nghiệp"
                 />
             </Head>
-            <Hero />
-            <AboutMe />
-            <Skills />
-            <McCategoryGrid />
-            <ActivityGallery />
-            <TeamSection />
-
-            <Video />
-            <Feedbacks />
+            <div className="relative">
+                <Hero />
+                <AboutMe />
+                <Skills />
+                <McCategoryGrid />
+                <TeamSection />
+                <ActivityGallery />
+                <Video />
+                <Feedbacks />
+            </div>
         </>
     )
 }

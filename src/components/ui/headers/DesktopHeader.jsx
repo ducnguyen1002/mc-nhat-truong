@@ -1,14 +1,15 @@
 'use client' // cần nếu bạn đang dùng app router của Next.js
 
+import { handleScrollToSection } from '@/utils/scrollToSection'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 export const navItems = [
-    { title: 'Giới thiệu', id: '#gioi-thieu' },
-    { title: 'Kinh nghiệm', id: '#kinh-nghiem' },
-    { title: 'Video thực tế', id: '#video' },
-    { title: 'Vì sao', id: '#vi-sao' },
-    { title: 'Đánh giá từ KH', id: '#feedbacks' },
+    { title: 'Giới thiệu', id: 'gioi-thieu' },
+    { title: 'Kinh nghiệm', id: 'kinh-nghiem' },
+    { title: 'Team HTP Play', id: 'team-htp' },
+    { title: 'Video thực tế', id: 'video' },
+    { title: 'Đánh giá từ KH', id: 'feedbacks' },
 ]
 
 const DesktopHeader = () => {
@@ -49,13 +50,13 @@ const DesktopHeader = () => {
                 </span>
                 <ul className="flex w-2/3 justify-evenly">
                     {navItems.map((nav) => (
-                        <Link
+                        <button
                             key={nav.id}
-                            href={nav.id}
+                            onClick={() => handleScrollToSection(nav.id)}
                             className="font-heading"
                         >
                             {nav.title}
-                        </Link>
+                        </button>
                     ))}
                 </ul>
             </div>

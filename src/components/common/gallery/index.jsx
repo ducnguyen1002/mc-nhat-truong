@@ -7,16 +7,18 @@ import Link from 'next/link'
 import Fancybox from '@/components/ui/fancy-box'
 
 const images = [
-    '/assets/images/self-1.jpg',
-    '/assets/images/self-2.jpg',
-    '/assets/images/self-3.jpg',
-    '/assets/images/self-4.jpg',
-    '/assets/images/self-5.jpg',
-    '/assets/images/self-6.jpg',
-    '/assets/images/self-7.jpg',
-    '/assets/images/self-8.jpg',
-    '/assets/images/self-9.jpg',
-    '/assets/images/self-10.jpg',
+    '/assets/team-building/team-1.jpg',
+    '/assets/team-building/team-2.jpg',
+    '/assets/team-building/team-3.jpg',
+    '/assets/team-building/team-4.jpg',
+    '/assets/team-building/team-5.jpg',
+    '/assets/team-building/team-6.jpg',
+    '/assets/gallery/1.jpg',
+    '/assets/gallery/2.jpg',
+    '/assets/gallery/3.jpg',
+    '/assets/gallery/4.jpg',
+    '/assets/gallery/5.jpg',
+    '/assets/gallery/6.jpg',
 ]
 
 export default function ActivityGallery() {

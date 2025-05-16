@@ -1,9 +1,9 @@
 'use client'
 
-import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { navItems } from '@/components/ui/headers/DesktopHeader'
+import { handleScrollToSection } from '@/utils/scrollToSection'
 
 const MobileHeader = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -55,13 +55,15 @@ const MobileHeader = () => {
                 <ul className="flex h-screen flex-col divide-y divide-lightGray">
                     {navItems.map((nav) => (
                         <li key={nav.id}>
-                            <Link
-                                href={nav.id}
+                            <button
                                 className="block px-6 py-4 text-center font-heading text-2xl text-black"
-                                onClick={() => setIsMenuOpen(false)} // Đóng menu khi chọn
+                                onClick={() => {
+                                    handleScrollToSection(nav.id)
+                                    setIsMenuOpen(false)
+                                }} // Đóng menu khi chọn
                             >
                                 {nav.title}
-                            </Link>
+                            </button>
                         </li>
                     ))}
                 </ul>

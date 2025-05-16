@@ -45,7 +45,7 @@ function Fancybox(props) {
             document.removeEventListener('beforeShow.fb', handleBeforeShow)
             document.removeEventListener('afterClose.fb', handleAfterClose)
         }
-    }, [])
+    }, [props.delegate, props.options])
 
     return (
         <div className={`${props?.className}`} ref={containerRef}>

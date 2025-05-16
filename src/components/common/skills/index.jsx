@@ -3,33 +3,38 @@ import React from 'react'
 
 const skillsData = [
     {
-        title: 'Hội Nghị Khách Hàng',
+        title: 'Gala Dinner',
         description:
-            'Với kinh nghiệm dẫn dắt nhiều chương trình hội nghị và sự kiện doanh nghiệp, tôi là MC chuyên nghiệp chuyên phụ trách các sự kiện Hội nghị Khách hàng – nơi kết nối giữa doanh nghiệp và đối tác, khách hàng thân thiết.',
+            'Là MC dẫn dắt Gala Dinner, tôi mang đến không khí sang trọng, vui tươi và gắn kết – khéo léo kết nối các phần trong chương trình, tạo điểm nhấn cảm xúc và duy trì năng lượng tích cực suốt buổi tiệc, góp phần giúp sự kiện thành công trọn vẹn và đáng nhớ.',
         images: [
-            'wedding-1.jpg',
-            'wedding-2.jpg',
-            'wedding-3.jpg',
-            'wedding-4.jpg',
+            '/assets/gala-dinner/gala-1.jpg',
+            '/assets/gala-dinner/gala-2.jpg',
+            '/assets/gala-dinner/gala-3.jpg',
+            '/assets/gala-dinner/gala-4.jpg',
         ],
         reverse: false,
     },
     {
-        title: 'Mở Bán Bất Động Sản',
+        title: 'Hội nghị khách hàng',
         description:
-            'Là MC chuyên nghiệp trong các sự kiện mở bán bất động sản, tôi luôn giữ phong thái tự tin, dẫn dắt mạch lạc, tạo không khí sôi động – góp phần nâng tầm hình ảnh dự án và truyền cảm hứng mua hàng đến khách mời.',
-        images: ['event-1.jpg', 'event-2.jpg', 'event-3.jpg', 'event-4.jpg'],
+            'Với kinh nghiệm dẫn dắt nhiều chương trình hội nghị và sự kiện doanh nghiệp, tôi là MC chuyên nghiệp chuyên phụ trách các sự kiện Hội nghị Khách hàng – nơi kết nối giữa doanh nghiệp và đối tác, khách hàng thân thiết.',
+        images: [
+            '/assets/customer-convention/cus-1.jpg',
+            '/assets/customer-convention/cus-2.jpg',
+            '/assets/customer-convention/cus-3.jpg',
+            '/assets/customer-convention/cus-4.jpg',
+        ],
         reverse: true,
     },
     {
-        title: 'Giới Thiệu Sản Phẩm',
+        title: 'Lễ khai trương',
         description:
-            'Là MC giới thiệu sản phẩm, tôi tập trung làm nổi bật thông điệp thương hiệu, truyền tải rõ ràng tính năng và giá trị sản phẩm đến khách hàng một cách lôi cuốn, dễ hiểu – góp phần tạo ấn tượng mạnh và thúc đẩy quyết định trải nghiệm hoặc mua hàng.',
+            'Là MC đồng hành trong các sự kiện khai trương, tôi mang đến không khí hân hoan và trang trọng, dẫn dắt chương trình linh hoạt – giúp tôn vinh thương hiệu, ghi dấu ấn ngày khởi đầu và lan tỏa năng lượng tích cực đến khách mời.',
         images: [
-            'teambuilding-1.jpg',
-            'teambuilding-2.jpg',
-            'teambuilding-3.jpg',
-            'teambuilding-4.jpg',
+            '/assets/open-ceremony/open-1.jpg',
+            '/assets/open-ceremony/open-2.jpg',
+            '/assets/open-ceremony/open-3.jpg',
+            '/assets/open-ceremony/open-4.jpg',
         ],
         reverse: false,
     },
@@ -101,7 +106,7 @@ const Skills = () => {
                                 className="relative aspect-[4/3] md:aspect-auto"
                             >
                                 <Image
-                                    src={`/assets/images/${img}`}
+                                    src={img}
                                     alt={item.title}
                                     fill
                                     className="rounded-xl object-cover"

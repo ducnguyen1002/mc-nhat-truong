@@ -8,8 +8,9 @@ const categories = [
             'Năng động, nhiệt huyết, nêu bật giá trị tinh thần đoàn kết của công ty, doanh nghiệp.',
     },
     {
-        title: 'MC Gala Dinner',
-        description: 'Hoạt náo, game show vui vẻ, hài hước.',
+        title: 'MC Mở bán Bất động sản',
+        description:
+            'Tạo không khí sôi động – góp phần nâng tầm hình ảnh dự án và truyền cảm hứng mua hàng đến khách mời.',
     },
     {
         title: 'MC Hội Khoá',
@@ -73,10 +74,12 @@ export default function McCategoryGrid() {
             </div>
 
             <Link
-                href={'#'}
+                href={
+                    'https://docs.google.com/document/d/1PWhjGl8sjhm0mRRQ0JBvPsQbnTLo_8DM/edit?usp=sharing&ouid=117939189653130541788&rtpof=true&sd=true'
+                }
                 className="mx-auto mt-10 block w-fit cursor-pointer rounded border bg-white px-8 py-4 font-heading text-black transition-all hover:border-black hover:bg-lightGray"
             >
-                Tải xuống kịch bản mẫu
+                Xem kịch bản mẫu
             </Link>
         </div>
     )

@@ -5,25 +5,25 @@ import React from 'react'
 
 const teamMembers = [
     {
-        name: 'Nguyễn Văn A',
-        age: 30,
-        role: 'Trưởng nhóm tổ chức sự kiện',
+        name: 'MC Nhật Trường',
+        age: 35,
+        role: 'Trưởng nhóm',
         image: '/assets/images/birthday-1.jpg',
     },
     {
-        name: 'Trần Thị B',
-        age: 27,
+        name: 'Gia Phú',
+        age: 25,
         role: 'MC Team Building',
         image: '/assets/images/birthday-2.jpg',
     },
     {
-        name: 'Lê Văn C',
+        name: 'Hồ Tuấn Anh',
         age: 32,
         role: 'Điều phối kỹ thuật sân khấu',
         image: '/assets/images/birthday-3.jpg',
     },
     {
-        name: 'Phạm Thị D',
+        name: 'Thanh Tùng',
         age: 25,
         role: 'Phụ trách hoạt náo & trò chơi',
         image: '/assets/images/birthday-4.jpg',
@@ -32,13 +32,14 @@ const teamMembers = [
 
 const TeamSection = () => {
     return (
-        <div className="container py-10 md:py-20">
+        <div id="team-htp" className="container py-10 md:py-20">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
                 <div className="flex flex-col items-center justify-center text-center md:col-span-2 md:items-start md:text-left">
                     <p className="text-mediumGray">đội ngũ</p>
                     <h2 className="uppercase tracking-wide">HTP PLAY</h2>
-                    <p className="mt-6 text-lg text-darkGray">
-                        Chuyên cung cấp đồ chơi <br /> tổ chức các sự kiện team
+                    <p className="mt-6 w-full max-w-[400px] text-lg text-darkGray">
+                        Do MC Nhật Trường trực tiếp quản lý. <br />
+                        Chuyên cung cấp đồ chơi tổ chức các sự kiện team
                         building ngoài trời
                     </p>
                     <Link

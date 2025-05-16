@@ -1,25 +1,26 @@
 'use client'
 
 import { USER_PHONENUMBER } from '@/utils/consts'
+import { handleScrollToSection } from '@/utils/scrollToSection'
 import { QuoteIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
 const desktopImages = [
-    '/assets/images/self-1.jpg',
-    '/assets/images/self-2.jpg',
-    '/assets/images/self-3.jpg',
-    '/assets/images/self-4.jpg',
-    '/assets/images/self-5.jpg',
-    '/assets/images/self-6.jpg',
+    '/assets/self/self-1.jpg',
+    '/assets/self/self-2.jpg',
+    '/assets/self/self-3.jpg',
+    '/assets/self/self-4.jpg',
+    '/assets/self/self-5.jpg',
+    '/assets/self/self-6.jpg',
 ]
 
 const Hero = () => {
     return (
-        <div className="container mt-10 flex h-screen max-h-[920px] min-h-[800px] flex-col gap-8 py-10 md:mt-20 md:flex-row md:gap-20 md:py-20">
+        <div className="relative mt-10 flex h-screen max-h-[920px] min-h-[800px] flex-col gap-8 bg-gradient-to-b from-white via-white to-transparent py-10 md:mt-0 md:flex-row md:items-start md:gap-20 md:bg-gradient-to-r md:py-20">
             {/* chữ */}
-            <div className="flex h-1/2 w-full flex-col justify-center text-center md:h-full md:w-2/3">
+            <div className="container flex h-1/2 w-full flex-col justify-center text-center md:mx-0 md:h-full md:w-2/3">
                 {/* tên */}
                 <h1 className="mb-2 block font-bold uppercase text-black">
                     NHẬT TRƯỜNG
@@ -41,20 +42,20 @@ const Hero = () => {
                     >
                         Liên hệ ngay
                     </Link>
-                    <Link
-                        href={'tel:' + USER_PHONENUMBER}
+                    <button
+                        onClick={() => handleScrollToSection('kinh-nghiem')}
                         className="w-full cursor-pointer rounded bg-gray px-8 py-4 font-heading text-black transition-all hover:bg-mediumGray md:w-fit"
                     >
                         Tìm hiểu thêm &gt;
-                    </Link>
+                    </button>
                 </div>
             </div>
 
             {/* ảnh avatar */}
-            <div className="flex h-1/2 w-full items-center justify-center md:h-full md:w-1/3">
-                <div className="relative my-auto aspect-square w-full overflow-hidden rounded-xl">
+            <div className="absolute inset-0 z-[-10] flex items-center justify-center">
+                <div className="relative my-auto size-full overflow-hidden rounded-xl">
                     <Image
-                        src="/assets/self/self-2.jpg"
+                        src="/assets/banner/banner-1.jpg"
                         className="object-cover object-top"
                         alt="self-mobile"
                         fill
