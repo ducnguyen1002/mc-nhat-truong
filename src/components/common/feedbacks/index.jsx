@@ -22,14 +22,13 @@ const Feedbacks = () => {
 
     return (
         <section id="feedbacks" className="container py-10 text-black md:py-20">
-            <h2 className="mb-4 text-center uppercase tracking-wide">
+            {/* <h2 className="mb-4 text-center uppercase tracking-wide">
                 Đánh giá
             </h2>
             <p className="text-gray-700 mb-12 text-center text-xl font-light">
                 trực tiếp từ khách hàng của MC Nhật Trường
             </p>
 
-            {/* Swiper */}
             <div data-aos="fade-up" className="container relative">
                 <Swiper
                     spaceBetween={20}
@@ -64,7 +63,6 @@ const Feedbacks = () => {
                     ))}
                 </Swiper>
 
-                {/* Custom Navigation Buttons */}
                 <button
                     ref={prevRef}
                     className="absolute left-0 top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full border-[1px] border-black bg-lightGray p-3 text-black shadow-md transition hover:scale-110"
@@ -78,7 +76,7 @@ const Feedbacks = () => {
                 >
                     <ChevronRight size={20} />
                 </button>
-            </div>
+            </div> */}
 
             <h3
                 data-aos="fade-up"

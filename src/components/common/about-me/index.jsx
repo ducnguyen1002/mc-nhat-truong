@@ -33,7 +33,7 @@ const AboutMe = () => {
                         Chuyên gia tổ chức sự kiện{' '}
                     </div>
                 </div>
-                <div class="col-span-2 space-y-2">
+                <div className="col-span-2 space-y-2">
                     <p>
                         MC Nhật Trường đã tốt nghiệp Lớp Cao đẳng Sư phạm Âm
                         nhạc - Trường Cao đẳng Văn hoá Nghệ thuật Thanh Hoá và

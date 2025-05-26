@@ -11,21 +11,21 @@ const teamMembers = [
         image: '/assets/self/self-3.jpg',
     },
     {
-        name: 'Gia Phú',
+        name: 'MC Gia Phú',
         age: 25,
-        role: 'MC Team Building',
+        role: '',
         image: '/assets/team-htp-play/mc-gia-phu.jpg',
     },
     {
-        name: 'Hồ Tuấn Anh',
+        name: 'MC Hồ Tuấn Anh',
         age: 32,
-        role: 'Điều phối kỹ thuật sân khấu',
-        image: '/assets/images/birthday-3.jpg',
+        role: '',
+        image: '/assets/team-htp-play/mc-tuan-anh.jpg',
     },
     {
         name: 'MC Thanh Tùng',
-        age: 25,
-        role: 'Phụ trách hoạt náo & trò chơi',
+        age: 30,
+        role: '',
         image: '/assets/team-htp-play/mc-thanh-tung.jpg',
     },
 ]
