@@ -8,13 +8,13 @@ const teamMembers = [
         name: 'MC Nhật Trường',
         age: 35,
         role: 'Trưởng nhóm',
-        image: '/assets/images/birthday-1.jpg',
+        image: '/assets/self/self-3.jpg',
     },
     {
         name: 'Gia Phú',
         age: 25,
         role: 'MC Team Building',
-        image: '/assets/images/birthday-2.jpg',
+        image: '/assets/team-htp-play/mc-gia-phu.jpg',
     },
     {
         name: 'Hồ Tuấn Anh',
@@ -23,10 +23,10 @@ const teamMembers = [
         image: '/assets/images/birthday-3.jpg',
     },
     {
-        name: 'Thanh Tùng',
+        name: 'MC Thanh Tùng',
         age: 25,
         role: 'Phụ trách hoạt náo & trò chơi',
-        image: '/assets/images/birthday-4.jpg',
+        image: '/assets/team-htp-play/mc-thanh-tung.jpg',
     },
 ]
 

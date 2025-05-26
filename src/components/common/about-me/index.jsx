@@ -36,7 +36,7 @@ const AboutMe = () => {
                 <div class="col-span-2 space-y-2">
                     <p>
                         MC Nhật Trường đã tốt nghiệp Lớp Cao đẳng Sư phạm Âm
-                        nhạc & Trường Cao đẳng Văn hoá Nghệ thuật Thanh Hoá và
+                        nhạc - Trường Cao đẳng Văn hoá Nghệ thuật Thanh Hoá và
                         được đào tạo lớp Thuyết trình viên tại Hà Nội.
                     </p>
                     <p>
