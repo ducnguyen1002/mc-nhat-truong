@@ -44,7 +44,11 @@ export default function ActivityGallery() {
 
     return (
         <section className="container py-16">
-            <h2 className="mb-6 block text-center font-semibold uppercase text-darkGray md:mb-10">
+            <h2
+                className="mb-6 block text-center font-semibold uppercase text-darkGray md:mb-10"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
                 Hình ảnh hoạt động
             </h2>
             <Fancybox
@@ -67,6 +71,8 @@ export default function ActivityGallery() {
                                 href={src}
                                 data-fancybox="gallery"
                                 className="group relative aspect-square overflow-hidden rounded-xl"
+                                data-aos="fade-right"
+                                data-aos-delay={index * 50}
                             >
                                 <Image
                                     src={src}

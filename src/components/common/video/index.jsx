@@ -7,7 +7,7 @@ const Video = () => {
                 Video thực tế
             </h2>
             <p className="text-gray-700 mb-12 text-center text-xl font-light">
-                chương trình MC Nhật Trường dẫn dắt
+                chương trình do MC Nhật Trường dẫn dắt
             </p>
 
             <iframe

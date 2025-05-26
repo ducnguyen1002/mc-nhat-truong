@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 
 export default function App({ Component, pageProps }) {
     useEffect(() => {
-        AOS.init({ duration: 1000, once: true }) // Cấu hình AOS
+        AOS.init({ duration: 800 }) // Cấu hình AOS
     }, [])
     return (
         <MainLayout>

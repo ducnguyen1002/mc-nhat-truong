@@ -47,6 +47,15 @@
 		border-radius: 10px;
 	}
 
+	.parallax {
+		will-change: transform;
+		transition: transform 0.2s linear;
+	}
+
+	.parallax-scroll {
+		transform: translateY(calc(var(--scroll) * -0.2));
+	}
+
 }
 
 @layer components {}

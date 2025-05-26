@@ -56,6 +56,8 @@ const TeamSection = () => {
                         <div
                             key={index}
                             className="overflow-hidden rounded-xl bg-white shadow transition hover:shadow-md"
+                            data-aos="fade-up"
+                            data-aos-delay={index * 200} // Incremental delay: 0, 200, 400, 600ms
                         >
                             <div className="relative aspect-square w-full">
                                 <Image

@@ -5,7 +5,6 @@ import { handleScrollToSection } from '@/utils/scrollToSection'
 import { QuoteIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
 
 const desktopImages = [
     '/assets/self/self-1.jpg',
@@ -18,7 +17,7 @@ const desktopImages = [
 
 const Hero = () => {
     return (
-        <div className="relative mt-10 flex h-screen max-h-[920px] min-h-[800px] flex-col gap-8 bg-gradient-to-b from-white via-white to-transparent py-10 md:mt-0 md:flex-row md:items-start md:gap-20 md:bg-gradient-to-r md:py-20">
+        <div className="relative mt-10 flex h-screen max-h-[920px] min-h-[800px] flex-col gap-8 overflow-hidden rounded-b-xl bg-gradient-to-b from-white via-white to-transparent py-10 shadow-lg md:mt-0 md:flex-row md:items-start md:gap-20 md:bg-gradient-to-r md:py-20">
             {/* chữ */}
             <div className="container flex h-1/2 w-full flex-col justify-center text-center md:mx-0 md:h-full md:w-2/3">
                 {/* tên */}
@@ -53,7 +52,7 @@ const Hero = () => {
 
             {/* ảnh avatar */}
             <div className="absolute inset-0 z-[-10] flex items-center justify-center">
-                <div className="relative my-auto size-full overflow-hidden rounded-xl">
+                <div className="relative my-auto size-full">
                     <Image
                         src="/assets/banner/banner-1.jpg"
                         className="object-cover object-top"

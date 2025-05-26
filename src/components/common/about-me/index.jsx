@@ -23,13 +23,13 @@ const AboutMe = () => {
                 </p>
                 <div className="space-y-3 uppercase">
                     {/* tag */}
-                    <div className="w-fit rounded-md bg-mediumGray px-4 py-2 text-white">
+                    <div className="w-fit rounded-md bg-mediumGray px-4 py-2 text-white shadow-lg">
                         MC CHUYÊN NGHIỆP
                     </div>
-                    <div className="w-fit rounded-md bg-mediumGray px-4 py-2 text-white">
+                    <div className="w-fit rounded-md bg-mediumGray px-4 py-2 text-white shadow-lg">
                         Chuyên gia tổ chức team building
                     </div>
-                    <div className="w-fit rounded-md bg-mediumGray px-4 py-2 text-white">
+                    <div className="w-fit rounded-md bg-mediumGray px-4 py-2 text-white shadow-lg">
                         Chuyên gia tổ chức sự kiện{' '}
                     </div>
                 </div>

@@ -94,7 +94,7 @@ const Skills = () => {
                     {/* Hình ảnh */}
                     <div
                         data-aos="fade-left"
-                        className={`grid w-full grid-cols-2 gap-2 rounded-xl p-2 md:min-h-[480px] ${
+                        className={`grid w-full grid-cols-2 gap-2 rounded-xl p-2 shadow-xl md:min-h-[480px] ${
                             item.reverse
                                 ? 'bg-gradient-to-b from-mediumGray to-lightGray'
                                 : 'bg-gradient-to-b from-gray to-lightGray'
