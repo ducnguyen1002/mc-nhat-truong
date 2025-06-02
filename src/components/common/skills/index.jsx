@@ -2,6 +2,18 @@ import Image from 'next/image'
 import React from 'react'
 
 const skillsData = [
+     {
+        title: 'Team building',
+        description:
+            'Là MC chuyên nghiệp trong các chương trình team building, tôi có kinh nghiệm khuấy động không khí, kết nối tinh thần đồng đội và tạo nên những khoảnh khắc gắn kết đáng nhớ cho doanh nghiệp. Với khả năng làm chủ sân khấu và thấu hiểu mục tiêu sự kiện, tôi đồng hành cùng doanh nghiệp mang lại trải nghiệm vui nhộn, ý nghĩa và giàu cảm xúc cho toàn thể đội ngũ.',
+        images: [
+            '/assets/team-building/team-11.jpg',
+            '/assets/team-building/team-12.jpg',
+            '/assets/team-building/team-13.jpg',
+            '/assets/team-building/team-14.jpg',
+        ],
+        reverse: true,
+    },
     {
         title: 'Gala Dinner',
         description:
@@ -53,11 +65,13 @@ const Skills = () => {
                 Sẵn sàng phục vụ mọi sự kiện lớn nhỏ của quý khách!
             </p>
 
-            {skillsData.map((item, index) => (
+            {skillsData.map((item, index) => {
+                const reverse = index % 2 == 0;
+                return (
                 <div
                     key={index}
                     className={`relative mb-12 flex flex-col md:items-stretch ${
-                        item.reverse ? 'md:flex-row-reverse' : 'md:flex-row'
+                        reverse ? 'md:flex-row-reverse' : 'md:flex-row'
                     } gap-6 md:gap-8`}
                 >
                     {/* Text phần mô tả */}
@@ -115,7 +129,8 @@ const Skills = () => {
                         ))}
                     </div>
                 </div>
-            ))}
+            )
+            })}
         </section>
     )
 }
